@@ -1,0 +1,31 @@
+body {
+	border: 20px solid lightgray;
+	padding: 20px;
+	font-family: Source Sans Pro;
+	max-width:700px;
+	width:80%;
+	margin: 20px auto;
+}
+
+time {
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: green;
+	letter-spacing: 0.2rem;	
+}
+
+h2 {
+
+	font-weight: 800;
+}
+
+article p:nth-of-type(1) {
+	border-left: 5px solid lightgray;
+	padding-left: 5px;
+}
+
+
+hr {
+	border-color: #eee;
+}

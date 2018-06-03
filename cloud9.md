@@ -1,0 +1,1 @@
+ctrl+e 	search file

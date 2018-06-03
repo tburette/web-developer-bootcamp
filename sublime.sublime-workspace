@@ -1,0 +1,1032 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padding",
+				"padding-bottom\tproperty"
+			],
+			[
+				"margin",
+				"margin-left\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"form",
+				"form\tTag"
+			],
+			[
+				"default",
+				"defaultdict\tclass"
+			],
+			[
+				"ports",
+				"ports_left\tstatement"
+			],
+			[
+				"factor",
+				"factorB\tstatement"
+			],
+			[
+				"layer",
+				"layers\tstatement"
+			],
+			[
+				"scanner",
+				"scanner_at\tfunction"
+			],
+			[
+				"unb",
+				"unb_n"
+			],
+			[
+				"passprase",
+				"passphrases\tstatement"
+			],
+			[
+				"set",
+				"setFormatter\tfunction"
+			],
+			[
+				"add",
+				"addHandler\tfunction"
+			],
+			[
+				"pro",
+				"project\tmodule"
+			],
+			[
+				"get",
+				"get_KP_Password\tfunction"
+			],
+			[
+				"next",
+				"next_tile"
+			],
+			[
+				"parse",
+				"parse_tile\tfunction"
+			],
+			[
+				"json",
+				"json_response\tstatement"
+			],
+			[
+				"upload",
+				"upload_file\tfunction"
+			],
+			[
+				"item",
+				"item_id\tparam"
+			],
+			[
+				"list",
+				"list_attachment_url\tstatement"
+			],
+			[
+				"auth",
+				"authentication_context\tmodule"
+			],
+			[
+				"off",
+				"office365\tmodule"
+			],
+			[
+				"state",
+				"state_data\tstatement"
+			],
+			[
+				"csr",
+				"csrf_exempt"
+			],
+			[
+				"colis",
+				"colis_id\tstatement"
+			],
+			[
+				"loca_sou",
+				"local_source_id\tstatement"
+			],
+			[
+				"find",
+				"findColisByBarcode"
+			],
+			[
+				"check",
+				"checkAutoCompleteMove"
+			],
+			[
+				"caris",
+				"caristeFromURL"
+			],
+			[
+				"selec",
+				"selectedColis"
+			],
+			[
+				"require_",
+				"require_GET\tstatement"
+			],
+			[
+				"Mou",
+				"MouvementTable\tclass"
+			],
+			[
+				"CA",
+				"CASCADE"
+			],
+			[
+				"T",
+				"TableauView\tclass"
+			],
+			[
+				"mod",
+				"models\tmodule"
+			],
+			[
+				"Hyper",
+				"HyperlinkedModelSerializer\tclass"
+			],
+			[
+				"views",
+				"viewsets\tmodule"
+			],
+			[
+				"try",
+				"try\tTry/Except"
+			],
+			[
+				"Da",
+				"DateTimeField\tclass"
+			],
+			[
+				"BA",
+				"BASE_DIR\tstatement"
+			],
+			[
+				"Publi",
+				"PublisherDetail\tclass"
+			],
+			[
+				"con",
+				"conf\tmodule"
+			],
+			[
+				"assert",
+				"assertEqual\tfunction"
+			],
+			[
+				"question",
+				"question_id\tparam"
+			],
+			[
+				"HttpResponse",
+				"HttpResponseRedirect\tclass"
+			],
+			[
+				"var",
+				"var\tcontext variable (var)"
+			],
+			[
+				"get_",
+				"get_object_or_404\tfunction"
+			],
+			[
+				"if",
+				"ife\tif... else..."
+			],
+			[
+				"de",
+				"delattr\tfunction"
+			],
+			[
+				"d",
+				"def\tFunction"
+			],
+			[
+				"app",
+				"apps\tmodule"
+			],
+			[
+				"tim",
+				"timezone\tmodule"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "sublime.md",
+			"settings":
+			{
+				"buffer_size": 462,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "notes.md",
+			"settings":
+			{
+				"buffer_size": 3518,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "bootstrap/bootstrap.html",
+			"settings":
+			{
+				"buffer_size": 1455,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n<head>\n\t<title>Bootstrap Navbar</title>\n\t<link rel=\"stylesheet\" href=\"bootstrap-3.3.7-dist/css/bootstrap.css\">\n</head>\n<body>\n\t\n\t<nav class=\"navbar navbar-default\">\n\t\t\n\t\t<div class=\"navbar-header\">\n\t\t\t<a href=\"#\" class=\"navbar-brand\">Koffee</a>\t\n\t\t</div>\t\n\t\t<ul class=\"nav navbar-nav\">\n\t\t\t<li><a href=\"#\">About</a></li>\n\t\t\t<li><a href=\"#\">Contact</a></li>\n\t\t</ul>\n\t\t<ul class=\"nav navbar-nav navbar-right\">\n\t\t\t<li><a href=\"#\">Sign up</a></li>\n\t\t\t<li><a href=\"#\"></a></li>\n\t\t</ul>\n\n\t</nav>\n</body>\n</html>\n\n",
+			"file": "bootstrap/navbar.html",
+			"file_size": 606,
+			"file_write_time": 131722534038741744,
+			"settings":
+			{
+				"buffer_size": 529,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 490.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"rename",
+				"Emmet: Rename Tag"
+			],
+			[
+				"new",
+				"File: New File Relative to Current View"
+			],
+			[
+				"remove",
+				"Emmet: Remove Tag"
+			],
+			[
+				"renae",
+				"Emmet: Rename Tag"
+			],
+			[
+				"emmet",
+				"Emmet: Remove Tag"
+			],
+			[
+				"ren",
+				"Emmet: Rename Tag"
+			],
+			[
+				":",
+				":w - Save"
+			],
+			[
+				"dupl",
+				"File: Duplicate"
+			],
+			[
+				"search",
+				"File: Search Files"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"new ",
+				"File: New File Relative to Current View"
+			],
+			[
+				"pakcka",
+				"Package Control: Install Package"
+			],
+			[
+				"comment",
+				"Toggle Comment"
+			],
+			[
+				"new file",
+				"File: New File Relative to Current View"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"tag",
+				"Emmet: Rename Tag"
+			],
+			[
+				"new f",
+				"File: New File Relative to Current View"
+			],
+			[
+				"rnema",
+				"Emmet: Rename Tag"
+			],
+			[
+				"nw file",
+				"File: New File Relative to Current View"
+			],
+			[
+				"display",
+				"Anaconda: Display object docs"
+			],
+			[
+				"new folder",
+				"File: New Folder Relative to Current View"
+			],
+			[
+				"goto",
+				"Anaconda: Goto object definition"
+			],
+			[
+				"go tod",
+				"Anaconda: Goto object definition"
+			],
+			[
+				"go to ",
+				"Anaconda: Goto object definition"
+			],
+			[
+				"dupli",
+				"File: Duplicate"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"find o",
+				"Anaconda: Find object usage"
+			],
+			[
+				"anaconda",
+				"Anaconda: Goto Python object"
+			],
+			[
+				"go",
+				"Anaconda: Goto Python object"
+			],
+			[
+				":e",
+				":e - Revert"
+			],
+			[
+				"minim",
+				"View: Toggle Minimap"
+			],
+			[
+				"minimap",
+				"View: Toggle Minimap"
+			],
+			[
+				"go to d",
+				"Anaconda: Goto object definition"
+			],
+			[
+				"go to",
+				"Anaconda: Goto Python object"
+			],
+			[
+				"markdo",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"package install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pacage",
+				"Package Control: Enable Package"
+			],
+			[
+				"package remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 162.0,
+		"history":
+		[
+			"dir()",
+			"dir",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/bootstrap"
+	],
+	"file_history":
+	[
+		"/C/Users/interfluence/AppData/Roaming/Sublime Text 3/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/C/Users/interfluence/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/css/float.html",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/css/blog.html",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/css/blog.css",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/css/squareimage.html",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/css/squareimage.css",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/squareimage.css",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/css/board.html",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/css/board.css",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/css/boxmodel.css",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/notes.md",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/css/boxmodel.html",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/css/01_Fonts_Intro/styles.css",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/css/01_Fonts_Intro/fonts.html",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/html/09_Selector_Exercise_Starter/selectorsExercise.html",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/html/09_Selector_Exercise_Starter/selectors.css",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/html/todolist.css",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/html/todolist.html",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/html/selectors.css",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/html/demo.html",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/html/aboutme.css",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/html/aboutme.html",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/html/firstpage.html",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/html/formexercice.html",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/html/forms.html",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/html/aboutme",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/html/pokemondata.txt",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/html/quiz1.html",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/html/forms",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/sublime.md",
+		"/C/Users/interfluence/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/interfluence/Documents/dev/web developer bootcamp/sublime.sublime-project",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day10.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day14.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day24.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day24_.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day24.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day24_slow.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day10.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day23_T.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day23_2.py",
+		"/C/Users/interfluence/Documents/dev/Sublime Text Notes.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day23.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day22_.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day22.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day2_part2.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day21_t.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day21.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day19.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day20.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day20_test.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day19_test.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day19.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day18.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day18t.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/tmp.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day18_part1.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day16.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day17_part1.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day17.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day17_miran1.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day_miran1.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day15.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day16.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day13.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day13_edit_object.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day13_.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day13_prof_newscanner.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day13_prof.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day9.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day12.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day13.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day13_example.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day12.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day9.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day9_final.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day8.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day3.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day4.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day6.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day7.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day11.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day1.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day2.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day7.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/da1.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day6.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day5.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day5.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day(.py",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day4.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/sublime.sublime-project",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/.gitignore",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/sublime.sublime-workspace",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day3.txt",
+		"/C/Users/interfluence/Documents/dev/adventofcode2017/day2.txt",
+		"/C/Users/interfluence/AppData/Roaming/Sublime Text 3/Packages/Anaconda/README.md",
+		"/C/Users/interfluence/Documents/dev/python/KP/rename_full_files.py",
+		"/C/Users/interfluence/Documents/dev/python/KP/KP/pipelines.py",
+		"/C/Users/interfluence/Documents/dev/python/KP/KP/liste_erreurs_recuperation_fichiers_depuis_kp.py",
+		"/C/Users/interfluence/Documents/dev/python/KP/KP/liste_erreurs.py",
+		"/C/Users/interfluence/Documents/dev/python/KP/KP/spiders/KPSpider.py",
+		"/C/Users/interfluence/Documents/dev/python/KP/stats.py",
+		"/C/Users/interfluence/Documents/dev/python/KP/SP/KP.py",
+		"/C/Users/interfluence/Documents/dev/python/KP/KP/settings.py",
+		"/C/Users/interfluence/Documents/dev/python/KP/SP/testSPREST.py",
+		"/C/Users/interfluence/Documents/dev/python/KP/.git/COMMIT_EDITMSG",
+		"/C/Users/interfluence/AppData/Local/Programs/Python/Python35/Lib/site-packages/scrapy/pipelines/files.py",
+		"/C/Users/interfluence/AppData/Local/Programs/Python/Python35/Lib/site-packages/scrapy/pipelines/media.py",
+		"/C/Users/interfluence/Documents/dev/python/KP/KP/spiders/__init__.py",
+		"/C/Users/interfluence/Documents/dev/python/KP/geckodriver.log",
+		"/C/Users/interfluence/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/C/Users/interfluence/Documents/dev/python/KP/SP/__init__.py",
+		"/C/Users/interfluence/Documents/dev/python/KP/main.py",
+		"/C/Users/interfluence/AppData/Roaming/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/C/Users/interfluence/Documents/dev/python/KP/scrapy.cfg",
+		"/C/Users/interfluence/Documents/dev/python/fictionmania/spiders/stories.py",
+		"/C/Users/interfluence/Documents/dev/django/ifecolisage/colisage/views.py",
+		"/C/Users/interfluence/Documents/dev/django/ifecolisage/colisage/static/js/tableau/mouvements.js",
+		"/C/Users/interfluence/Documents/dev/django/ifecolisage/colisage/static/js/tableau/historique.js",
+		"/C/Users/interfluence/Documents/dev/django/ifecolisage/colisage/static/js/patrouilleur/barcode.js",
+		"/C/Users/interfluence/Documents/dev/django/ifecolisage/colisage/static/css/patrouilleur.css",
+		"/C/Users/interfluence/Documents/dev/django/ifecolisage/colisage/templates/colisage/patrouilleur.html",
+		"/C/Users/interfluence/Documents/dev/django/ifecolisage/colisage/static/js/patrouilleur/patrouilleur.js",
+		"/C/Users/interfluence/Documents/dev/django/ifecolisage/colisage/static/css/tableau.css",
+		"/C/Users/interfluence/Documents/dev/django/ifecolisage/colisage/templates/colisage/tableau.html",
+		"/C/Users/interfluence/Documents/dev/django/ifecolisage/colisage/urls.py"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 117.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"=\"#\">",
+			"nth",
+			"div",
+			"rename"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "sublime.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 462,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								53,
+								53
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "notes.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3518,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3518,
+								3518
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3550.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "bootstrap/bootstrap.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1455,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								66,
+								66
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "bootstrap/navbar.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 529,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								503,
+								188
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "sublime.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"day10",
+				"day10.py"
+			],
+			[
+				"test",
+				"SP\\testSPREST.py"
+			],
+			[
+				"tests",
+				"SP\\testSPREST.py"
+			],
+			[
+				"setting",
+				"KP\\settings.py"
+			],
+			[
+				"patrou",
+				"colisage\\static\\css\\patrouilleur.css"
+			],
+			[
+				"patr",
+				"colisage\\static\\css\\patrouilleur.css"
+			],
+			[
+				"view",
+				"colisage\\views.py"
+			],
+			[
+				"css",
+				"colisage\\static\\css\\tableau.css"
+			],
+			[
+				"admin",
+				"colisage\\admin.py"
+			],
+			[
+				"model",
+				"colisage\\models.py"
+			],
+			[
+				"mana",
+				"manage.py"
+			],
+			[
+				"patrouil",
+				"colisage\\static\\js\\patrouilleur\\patrouilleur.js"
+			],
+			[
+				"url",
+				"colisage\\urls.py"
+			],
+			[
+				"state",
+				"colisage\\static\\js\\state.js"
+			],
+			[
+				"pa",
+				"colisage\\static\\js\\patrouilleur\\patrouilleur.js"
+			],
+			[
+				"mouvemen",
+				"colisage\\static\\js\\tableau\\mouvements.js"
+			],
+			[
+				"util",
+				"colisage\\utils.py"
+			],
+			[
+				"colis.js",
+				"colisage\\static\\js\\tableau\\colis.js"
+			],
+			[
+				"pat",
+				"colisage\\static\\js\\patrouilleur\\patrouilleur.js"
+			],
+			[
+				"vie",
+				"colisage\\views.py"
+			],
+			[
+				"tableau.js",
+				"colisage\\static\\js\\tableau\\tableau.js"
+			],
+			[
+				"",
+				"quotes.json"
+			],
+			[
+				"tablea",
+				"colisage\\templates\\colisage\\tableau.html"
+			],
+			[
+				"urls",
+				"colisage\\urls.py"
+			],
+			[
+				"todo",
+				"todo.txt"
+			],
+			[
+				"re",
+				"requirements.txt"
+			],
+			[
+				"models",
+				"colisage\\models.py"
+			],
+			[
+				"frm",
+				"colisage\\forms.py"
+			],
+			[
+				"patroui",
+				"colisage\\templates\\colisage\\patrouilleur.html"
+			],
+			[
+				"sett",
+				"tuto2\\settings.py"
+			],
+			[
+				"index",
+				"polls\\templates\\polls\\index.html"
+			],
+			[
+				"detail",
+				"polls\\templates\\polls\\detail.html"
+			],
+			[
+				"det",
+				"polls\\templates\\polls\\detail.html"
+			],
+			[
+				"poll",
+				"polls\\urls.py"
+			],
+			[
+				"vi",
+				"polls\\views.py"
+			],
+			[
+				"views",
+				"testviews\\views.py"
+			],
+			[
+				"urs",
+				"testviews\\urls.py"
+			],
+			[
+				"f",
+				"testviews\\forms.py"
+			],
+			[
+				"author",
+				"testviews\\templates\\testviews\\author_detail.html"
+			],
+			[
+				"pub",
+				"testviews\\templates\\testviews\\publisher_detail.html"
+			],
+			[
+				"mde",
+				"testviews\\models.py"
+			],
+			[
+				"publi",
+				"testviews\\templates\\testviews\\publisher_detail.html"
+			],
+			[
+				"mod",
+				"polls\\models.py"
+			],
+			[
+				".giti",
+				".gitignore"
+			],
+			[
+				"ed",
+				"polls\\templates\\polls\\detail.html"
+			],
+			[
+				"settings",
+				"tuto\\settings.py"
+			],
+			[
+				"se",
+				"tuto\\settings.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 101.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"index"
+			]
+		],
+		"width": 490.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 147.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

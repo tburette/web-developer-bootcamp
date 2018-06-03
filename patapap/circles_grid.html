@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Circles</title>
+	<link rel="stylesheet" href="circles.css">
+	<script type="text/javascript" src="paper-full.js"></script>
+	<!-- <script type="text/javascript" canvas="myCanvas"> -->
+	<script type="text/paperscript" canvas="myCanvas">
+		var w = view.size.width;
+		var h = view.size.height;
+		for(var x = 0;x<10;x++){
+			for(var y = 0;y<10;y++){
+				new Path.Circle({
+					center: [x*(w/10), y*(h/10)],
+					radius: 10,
+					fillColor: 'purple'
+				});
+			}
+		}
+
+		var path = new Path();
+		path.strokeColor = 'green';
+		var start = new Point(100, 100);
+		path.moveTo(start);
+		path.lineTo(start + [100, -10]);
+
+		var myCircle = new Path.Circle(new Point(100, 70), 50);
+		myCircle.fillColor = 'white';
+		var myCircle2 = new Path.Circle(new Point(100, 50), 10);
+		myCircle2.fillColor = 'blue';
+	</script>
+</head>
+<body>
+	<canvas id="myCanvas" resize></canvas>
+</body>
+</html>

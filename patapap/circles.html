@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Circles</title>
+	<link rel="stylesheet" href="circles.css">
+	<script type="text/javascript" src="paper-full.js"></script>
+	<!-- <script type="text/javascript" canvas="myCanvas"> -->
+	<script type="text/paperscript" canvas="myCanvas">
+		var w = view.size.width;
+		var h = view.size.height;
+		for(var x = 0;x<10;x++){
+			for(var y = 0;y<10;y++){
+				new Path.Circle({
+					center: [x*(w/10), y*(h/10)],
+					radius: 10,
+					fillColor: 'purple'
+				});
+			}
+		}
+
+		var aCircle = new Path.Circle({
+			center: [view.size.width*Math.random(), 
+				view.size.width*Math.random()],
+			radius: 100,
+			fillColor: 'green'
+		});
+
+		function onFrame(event) {
+			aCircle.position = aCircle.position + [1, 1];
+			aCircle.fillColor.hue +=1;
+			aCircle.scale(0.98);
+		}
+
+		function onKeyDown(event){
+			var maxPoint = new Point(
+				view.size.width, 
+				view.size.height);
+			var randomPoint = Point.random();
+			if(event.key == 'a') {
+				console.log(maxPoint * randomPoint);
+				new Path.Circle(maxPoint * randomPoint, 10).fillColor = "blue";
+				// aCircle.position = [
+				// 	view.size.width*Math.random(), 
+				// 	view.size.width*Math.random()];
+				// aCircle.fillColor = 'green';
+			}
+		}			
+		function onKeyUp(event){
+			if(event.key == 'a') {
+				aCircle.fillColor = '';
+			}
+		}			
+	</script>
+</head>
+<body>
+	<canvas id="myCanvas" resize></canvas>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Demo</title>
+</head>
+<body>
+<form action="" method="get">
+	<!-- wrap -->
+	<label> Username: 
+		<!-- required attribute -->
+		<input name="username" type="text" placeholder="username">	
+	</label>
+	<!-- aside (for == name) -->
+	<label for="password">Password:</label>
+	<!-- id = for for
+	name = for submit
+	placeholder = for inner temporary text
+	 -->
+	<input id="password" name="pasword" type="password" placeholder="password">
+	<p>Do you prefer cats or dogs</p>
+	<label for="dogs">Dogs:</label>
+	<input name="petChoice" id="dogs" type="radio">
+	<label for="cats">Cats:</label>
+	<input name="petChoice" id="cats" type="radio">
+
+	<p>What's your favorite color?</p>
+	<select name="color" id="color">
+		<option>Red</option>
+		<option value="Or">Orange</option>
+		<option value="Ye">Yellow</option>
+	</select>
+
+	<textarea name="paragraph" id="" cols="30" rows="10"></textarea>
+
+	<input type="submit">
+<!--
+<button>Submit</button>
+<input type="color">
+<input kktype="radio">
+ -->
+</form>
+</body>
+</html>

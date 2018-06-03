@@ -1,0 +1,19 @@
+h1 {
+	color: rgba(255, 0, 0, 0.1);
+	border-color: purple;
+	border-width: 5px;
+	border-style: ridge;
+}
+
+li {
+	color: orange;
+}
+
+h3 {
+	color: blue; 
+	background: gray;
+}
+
+body {
+	background: url(wood_grain_white_by_marlborolt-d79dydr.jpg);
+}

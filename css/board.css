@@ -1,0 +1,25 @@
+h1 {
+	text-align:center;
+	/*margin: 0 auto;
+	width: 50%;*/
+}
+
+table {
+	margin: 0 auto;
+}
+
+td {
+	/*border: 2px solid blue;	*/
+	width: 100px;
+	height: 100px;
+}
+
+td:nth-child(2){
+	border: solid gray;
+	border-width: 0 2px;
+}
+
+tr:nth-child(2) td{
+	border-top: 2px solid gray;
+	border-bottom: 2px solid gray;
+}
