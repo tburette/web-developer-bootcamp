@@ -7,15 +7,17 @@ http://youmightnotneedjquery.com/
 https://uigradients.com/
 https://html5up.net/
 https://stackshare.io/
+https://www.programmableweb.com/
 
-To read:
+To read/to learn:
+https://medium.com/coderbyte/learn-by-doing-the-8-best-interactive-coding-websites-4c902915287c
+https://hackernoon.com/beginners-playbook-to-building-a-first-product-project-or-software-portfolio-6d6d8b69dcb
 jsdoc
 https://developer.mozilla.org/fr/docs/Web/HTTP/CORS
 https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag
 js module object pattern
 https://www.getpostman.com/
 
-To (re-)learn
 CORS
 http in depth
 http request types
@@ -575,12 +577,97 @@ npm install
 npm install xxx --save
 add to package.json
 
-var xxx = require("xxx")
-
-node file.js
-
+npm init
+	create a new package.json
 package.json
 
 
+var xxx = require("xxx")
+node file.js
+
+
+
 ## Express
-route
+
+### route
+var app = express();
+app.get('/', function(req, res){
+    res.send('content');
+});
+
+star router (404)
+app.get('*', function(req, res){
+    res.send('content');
+});
+
+
+order matters!
+routes are evaluated in the order they were added
+
+route parameters
+app.get('/r/:subredditName', function(req, res){
+    res.send('Welcome to ' + req.params.subredditName);
+});
+
+
+serve the directory
+app.use(express.static('public'));
+
+
+
+res.redirect('/friends');
+
+### template
+requires
+npm install ejs --save
+
+res.render
+app.get('/', function(req, res){
+	//it is assumed that dogs.ejs is in a subdirectory
+    res.render('dogs.ejs');
+})
+
+pass values
+app.get('/fallinlovewith/:thing', function(req, res){
+    var thing = req.params.thing
+    res.render('love.ejs', {
+        thingVar: thing,
+    })
+})
+
+<%= %>  returned value will be added to the html
+<% %>   logic, just runs the code
+
+
+<% posts.forEach(function(p){ %>
+	<span>xxx</span>
+    <li><%= p.title %> - <strong><%= p.author %></strong></li>
+<% }); %>
+
+
+If define the template engine, no need to write the file extension: posts.ejs => posts
+
+app.set('view engine', 'ejs');
+res.render('posts', {posts: posts});
+
+include
+<% include partials/header%>
+in the header:
+<link rel='stylesheet' href='/app.css'>
+	do not forget the /xxx otherwise page in subdirs won't find it : 
+	/page/this --> /page/app.css instead of /app.css
+
+
+### POST
+post is sent to the body
+by default express doesn't give info on the body for use
+need body-parser package to get a req.body
+
+var bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({extended: true}))
+
+app.post('/addfriend', function(req, res){
+    console.log(req.body);
+    res.send('You have reached the post route')
+})
+
