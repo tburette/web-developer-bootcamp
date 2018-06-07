@@ -12,11 +12,14 @@ https://www.programmableweb.com/
 To read/to learn:
 https://medium.com/coderbyte/learn-by-doing-the-8-best-interactive-coding-websites-4c902915287c
 https://hackernoon.com/beginners-playbook-to-building-a-first-product-project-or-software-portfolio-6d6d8b69dcb
+https://medium.com/coderbyte/a-guide-to-becoming-a-full-stack-developer-in-2017-5c3c08a1600c
 jsdoc
 https://developer.mozilla.org/fr/docs/Web/HTTP/CORS
 https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag
 js module object pattern
 https://www.getpostman.com/
+script integrity, crossorigin
+https://news.ycombinator.com/item?id=14078320
 
 CORS
 http in depth
@@ -26,12 +29,24 @@ rest api
 
 
 #tips
-contenu (image) ne va ps jusqu'au bas 
+contenu (image) ne va pas jusqu'au bas 
 html {
 	height: 100%;
 }
 
 
+# REST
+7 restful routes
+
+| **URL** | **HTTP Verb** |  **Action**|
+|------------|-------------|------------|
+| /photos/         | GET       | index  
+| /photos/new         | GET       | new   
+| /photos          | POST      | create   
+| /photos/:id      | GET       | show       
+| /photos/:id/edit | GET       | edit       
+| /photos/:id      | PATCH/PUT | update    
+| /photos/:id      | DELETE    | destroy  
 
 # 3 15 HTML basics
 tag = <>
@@ -322,7 +337,11 @@ adds a nice border + scale down to fit
 to be used in grids
 <div class="thumbnail">
 
+add inside thumbnail to provide nice description
+<div class="caption">
 
+centering text 
+class='center'
 
 
 # JS
@@ -404,7 +423,13 @@ defer wait for the dom to be completely loadd
 	...
 }
 
-underscore.js
+## Hoisting is for variable also
+var salary = "1000$";
+ (function () {
+     console.log("Original salary was " + salary);
+     var salary = "5000$";
+     console.log("My New Salary " + salary);
+})();
 
 # Dom
 Document Object Model
@@ -671,3 +696,52 @@ app.post('/addfriend', function(req, res){
     res.send('You have reached the post route')
 })
 
+
+
+
+# Mongo
+
+## Install
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
+
+echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.6 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
+
+sudo apt-get update
+sudo apt-get install -y mongodb-org
+
+cd ~
+mkdir data
+echo "mongod --dbpath=data --nojournal" > mongod
+chmod a+x mongod
+
+Now, in order to run mongod you'll first need to cd into root ~ then run ./mongod 
+
+mongod 	deamon
+
+mongo 	shell
+show dbs
+	list existing dbs
+use xxx
+	use the db(create if does not exists)
+show collections
+	show th 'tables'
+
+## API
+ODM
+
+db.dogs.insert({name: "Rusty", breed: "Mutt"})
+
+db.dogs.find()
+db.dogs.find({name: 'Rusty'})
+
+db.dogs.findById(id)
+	xxx._id
+
+db.dogs.update({name: 'Rusty'}, {breed: 'Labradoodle'})
+	replace content (name will disappear)
+db.dogs.update({name: 'Lucy'}, {$set: {breed: 'Labradoodle', isCute: true}})
+	update/add content. keep existing
+
+db.dogs.remove({breed: 'Labradoodle'})
+
+dg.dogs.drop()
