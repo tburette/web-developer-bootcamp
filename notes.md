@@ -8,8 +8,14 @@ https://uigradients.com/
 https://html5up.net/
 https://stackshare.io/
 https://www.programmableweb.com/
+https://cssreference.io/
+https://css-tricks.com/
+
 
 To read/to learn:
+http://book.mixu.net/css/index.html learn css layout the hard way
+https://news.ycombinator.com/item?id=16306371 modern css explained (history)
+https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70 modern javascript explained (history)
 https://medium.com/coderbyte/learn-by-doing-the-8-best-interactive-coding-websites-4c902915287c
 https://hackernoon.com/beginners-playbook-to-building-a-first-product-project-or-software-portfolio-6d6d8b69dcb
 https://medium.com/coderbyte/a-guide-to-becoming-a-full-stack-developer-in-2017-5c3c08a1600c
@@ -28,12 +34,6 @@ rest api
 
 
 
-#tips
-contenu (image) ne va pas jusqu'au bas 
-html {
-	height: 100%;
-}
-
 
 # REST
 7 restful routes
@@ -47,6 +47,11 @@ html {
 | /photos/:id/edit | GET       | edit       
 | /photos/:id      | PATCH/PUT | update    
 | /photos/:id      | DELETE    | destroy  
+
+html form only support GET and POST. PUT and DELETE are not supported
+
+
+
 
 # 3 15 HTML basics
 tag = <>
@@ -176,6 +181,13 @@ can also use box-shadow
 text-decoration
 	line-through
 
+
+
+## tips
+contenu (image) ne va pas jusqu'au bas 
+html {
+	height: 100%;
+}
 
 ## selectors
 https://www.cheatography.com/dimitrios/cheat-sheets/the-30-css-selectors-you-must-memorize/
@@ -344,6 +356,11 @@ centering text
 class='center'
 
 
+
+
+
+
+
 # JS
 
 ##Primitives
@@ -431,6 +448,10 @@ var salary = "1000$";
      console.log("My New Salary " + salary);
 })();
 
+
+
+
+
 # Dom
 Document Object Model
 
@@ -484,6 +505,8 @@ click
 input change
 mouseover
 mouseout
+
+
 
 
 # JQuery
@@ -612,6 +635,11 @@ node file.js
 
 
 
+## Module
+
+
+
+
 ## Express
 
 ### route
@@ -642,6 +670,15 @@ app.use(express.static('public'));
 
 res.redirect('/friends');
 
+
+### Method override
+
+to get a form with put
+<form method='POST' action='...?_method=PUT'></form>
+var methodOverride = require('method-override')
+app.use(methodOverride('_method'))
+
+
 ### template
 requires
 npm install ejs --save
@@ -661,6 +698,7 @@ app.get('/fallinlovewith/:thing', function(req, res){
 })
 
 <%= %>  returned value will be added to the html
+<%- %>  unescaped value
 <% %>   logic, just runs the code
 
 
@@ -741,7 +779,70 @@ db.dogs.update({name: 'Rusty'}, {breed: 'Labradoodle'})
 	replace content (name will disappear)
 db.dogs.update({name: 'Lucy'}, {$set: {breed: 'Labradoodle', isCute: true}})
 	update/add content. keep existing
+Blog.findByIdAndUpdate()
 
 db.dogs.remove({breed: 'Labradoodle'})
+Blog.findByIdAndRemove(req.params.id, function(err){
 
 dg.dogs.drop()
+
+## Mongoose
+
+var mongoose = require('mongoose')
+mongoose.connect('mongodb://localhost/blog_demo')
+
+var userSchema = mongoose.Schema({
+   email: String,
+   name: String
+}) 
+var User = mongoose.model('User', userSchema)
+
+var newUser = new User({
+    email: 'charlie@brown.edu',
+    name: 'Charlie Brown'
+})
+newUser.save(function(err, user){
+    if(err){
+        console.log(err)
+    }else{
+        console.log(user)
+    }
+})
+
+
+### associer
+
+Association en incluant
+var userSchema = mongoose.Schema({
+   email: String,
+   name: String
+   //posts will contain post documents (not reference)
+   posts: [postSchema]
+}) 
+
+peut ajouter a collection : 
+newUser.posts.push({
+    title: 'post title',
+    content: 'some content'
+})
+
+
+Association par référence
+var userSchema = mongoose.Schema({
+   email: String,
+   name: String,
+   posts: [{
+       type: mongoose.Schema.Types.ObjectId,
+       ref: "Post"
+   }]
+})
+foundUser.posts.push(post)
+
+populate to get references
+User.findOne(
+    {
+        email: 'bob@gmail.com'
+    }).populate('posts').exec(function(err, user){
+    console.log(user)
+})
+
