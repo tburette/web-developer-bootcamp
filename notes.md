@@ -13,6 +13,8 @@ https://css-tricks.com/
 
 
 To read/to learn:
+https://developers.google.com/web/fundamentals/
+https://adamwathan.me/css-utility-classes-and-separation-of-concerns/
 http://book.mixu.net/css/index.html learn css layout the hard way
 https://news.ycombinator.com/item?id=16306371 modern css explained (history)
 https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70 modern javascript explained (history)
@@ -664,7 +666,7 @@ app.get('/r/:subredditName', function(req, res){
 
 
 serve the directory
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 
 
@@ -735,6 +737,21 @@ app.post('/addfriend', function(req, res){
 })
 
 
+### middleware
+
+function isLoggedIn(req, res, next){
+    if(req.isAuthenticated()){
+        return next();
+    }
+    res.redirect('/')
+})
+
+app.post('/login', passport.authenticate('local', {
+    successRedirect: '/secret',
+    failureRedirect: '/login'
+}), function(req, res){
+
+app.get('/secret', isLoggedIn, function(req, res){ 
 
 
 # Mongo
@@ -846,3 +863,8 @@ User.findOne(
     console.log(user)
 })
 
+
+# Passportjs
+http://www.passportjs.org/
+https://github.com/jaredhanson/passport-local
+https://github.com/saintedlama/passport-local-mongoose
