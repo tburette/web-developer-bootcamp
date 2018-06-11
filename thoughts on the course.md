@@ -4,7 +4,7 @@ good at following a path with continuous small improvment
 
 doesn't explain the subjects in depth only just enough to be able to code.
 Advantage : quick learning
-Disavantage : superficial, doesn't talk about security risk (forma data from user,..)
+Disavantage : superficial, doesn't talk about security risk (forma data from user,..), application can crash (findbyid returns null)
 
 
 very few exercices (do this on your own then let's check the result)
