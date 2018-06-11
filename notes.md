@@ -30,6 +30,10 @@ https://www.getpostman.com/
 script integrity, crossorigin
 https://news.ycombinator.com/item?id=14078320
 
+CSS
+https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables
+https://developer.mozilla.org/en-US/docs/Web/CSS/:root
+
 CORS
 http in depth
 http request types
@@ -306,6 +310,16 @@ margin-top:
 
 align an element on a row to the right
 float: right
+
+
+## z-index
+example of use : changing images 
+z-index
+	when overlaps, tells the priority
+	0 = will be behind other content
+position: relative;
+	position static ignores the z-index, change it to
+	be able to use z-index
 
 
 # Bootstrap
@@ -636,6 +650,14 @@ package.json
 var xxx = require("xxx")
 node file.js
 
+nodemon app.js
+	will reload when file changes
+
+can require a directory:
+someDirectory
+	index.js
+require('someDirectory')
+
 
 
 ## Module
@@ -776,9 +798,26 @@ app.use(indexRoutes)
 app.use('/prefix', indexRoutes)
 	use the router starting at
 
+## connect-flash
+display a message when next page displayed
+var flash = require('connect-flash')
+app.use(flash())
+more setup to do if express-session not setup yet
+
+when want to display something after refresh (eg. redirect) :
+req.flash('error', 'Error message')
+
+when displaying:
+<div class="container">
+    <% if(error && error.length > 0){ %>
+        <div class='alert alert-danger' role='alert'>
+            <%= error %>
+        </div>
+    <% } %>
+</div>
 
 
-#Misc
+## Misc
 
 Can add data in
 app.locals
@@ -828,10 +867,8 @@ db.dogs.update({name: 'Rusty'}, {breed: 'Labradoodle'})
 	replace content (name will disappear)
 db.dogs.update({name: 'Lucy'}, {$set: {breed: 'Labradoodle', isCute: true}})
 	update/add content. keep existing
-Blog.findByIdAndUpdate()
 
 db.dogs.remove({breed: 'Labradoodle'})
-Blog.findByIdAndRemove(req.params.id, function(err){
 
 dg.dogs.drop()
 
@@ -858,6 +895,12 @@ newUser.save(function(err, user){
     }
 })
 
+Blog.findById()
+Blog.findByIdAndUpdate()
+Blog.findByIdAndRemove()
+
+attention if id not found : does NOT return an error but 
+returns with a null value
 
 ### associer
 
