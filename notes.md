@@ -13,6 +13,7 @@ https://css-tricks.com/
 
 
 To read/to learn:
+https://www.youtube.com/playlist?list=PL693EFD059797C21E
 https://developers.google.com/web/fundamentals/
 https://adamwathan.me/css-utility-classes-and-separation-of-concerns/
 http://book.mixu.net/css/index.html learn css layout the hard way
@@ -671,6 +672,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 res.redirect('/friends');
+res.redirect('back')
 
 
 ### Method override
@@ -752,6 +754,36 @@ app.post('/login', passport.authenticate('local', {
 }), function(req, res){
 
 app.get('/secret', isLoggedIn, function(req, res){ 
+
+or
+app.use(isLoggedIn)
+
+## router
+can have multiple router objects
+
+var express = require('express')
+var router = express.Router()
+var router = express.Router({mergeParams: true})
+	merge : cas ou fait app.use('.../:id/...') dans parent
+router.get...
+
+can add middlewares to a specific router
+router.use(...)
+
+app.use(indexRoutes)
+	use the router (router is itself a middleware)
+
+app.use('/prefix', indexRoutes)
+	use the router starting at
+
+
+
+#Misc
+
+Can add data in
+app.locals
+res.locals
+will bee visible to the template
 
 
 # Mongo
@@ -862,6 +894,17 @@ User.findOne(
     }).populate('posts').exec(function(err, user){
     console.log(user)
 })
+
+
+## Plugin
+
+like express middleware, adds features
+
+SomeSchema.plugin(...)
+
+or globally
+mongoose.plugin(...)
+
 
 
 # Passportjs
