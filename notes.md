@@ -954,3 +954,31 @@ mongoose.plugin(...)
 http://www.passportjs.org/
 https://github.com/jaredhanson/passport-local
 https://github.com/saintedlama/passport-local-mongoose
+
+
+# Git
+basic introduction to git
+
+
+# Heroku
+Install heroku command line : heroku
+
+heroku login
+
+Have a git repository
+
+heroku create
+
+git push heroku master
+
+heroku logs
+
+package.json must have a "start" script : "node app.js"
+
+can run code on the heroku machine
+heroku run npm install xxx
+
+# mlab
+https://mlab.com/
+Hosted mongo
+
