@@ -5,11 +5,16 @@ https://fontawesome.com/
 MDN
 http://youmightnotneedjquery.com/
 https://uigradients.com/
+https://flatuicolors.com/
 https://html5up.net/
 https://stackshare.io/
 https://www.programmableweb.com/
 https://cssreference.io/
 https://css-tricks.com/
+
+https://www.pinterest.fr/robklaiss/ui-ux-gallery/?autologin=true
+https://www.pinterest.fr/alexhyett/ui-design/?autologin=true
+https://www.pinterest.fr/wkk711/mobile-ui-ux/?autologin=true
 
 
 To read/to learn:
@@ -378,7 +383,7 @@ class='center'
 
 
 
-# JS
+# Javascript
 
 ##Primitives
 2
@@ -524,6 +529,62 @@ mouseover
 mouseout
 
 
+## Scope
+Execution context/scope chain
+
+## This
+lobal scope = window
+
+function mistake(){
+	this.x = x;
+}
+mistake()
+
+inside an  object, this = the closest parent object
+
+with "use strict" this will be undefine instead of window
+
+f.call(thisObject, arg1, ar2, ...
+f.apply(thisObject, [array, of,a rgs]))
+boundMethod = f.bind(thisObject arg1, arg2) //f not called
+
+f.call(obj, "arg");
+f.apply(obj, ["arg"]);
+g=f.bind(obj)
+g("arg")
+
+## OOP
+
+reuse constructor
+function Car(make, model, year){
+	this.make = make
+	this.model = model
+	this.year = year
+	this.numheels = 4;
+}
+function Motorcycle(make, model, year){
+	Car.apply(this, arguments)
+	this.numWheels = 2;
+}
+
+objects have
+__proto__
+
+prototype have
+.constructor
+
+constructor have
+.prototype
+
+prototype chain
+
+## Closure
+
+
+## use strict
+"use strict";
+
+forEach will be undefined instead of the global object
 
 
 # JQuery
@@ -978,7 +1039,16 @@ package.json must have a "start" script : "node app.js"
 can run code on the heroku machine
 heroku run npm install xxx
 
+## to define database can use env variable
+mongoose.connect(process.env.DATABASEURL)
+
+export DATABASEURL=xxx
+through the heroku settings UI
+heroku config:get GITHUB_USERNAME
+
 # mlab
 https://mlab.com/
 Hosted mongo
+
+
 
